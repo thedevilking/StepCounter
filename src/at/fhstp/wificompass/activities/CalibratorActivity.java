@@ -42,6 +42,8 @@ import at.fhstp.wificompass.view.PaintBoxHistory;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.dao.Dao;
 
+//添加注释
+
 /**
  * <p>
  * This Activity is used to calibrate the parameters concerning step detection
