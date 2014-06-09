@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
-import at.fhstp.wificompass.BuildInfo;
+//import at.fhstp.wificompass.BuildInfo;
 import at.fhstp.wificompass.R;
 
 public class AboutActivity extends Activity {
@@ -19,9 +19,9 @@ public class AboutActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about);
-		((TextView)findViewById(R.id.about_revision)).setText(BuildInfo.revision);
-		((TextView)findViewById(R.id.about_date)).setText(BuildInfo.commitDate);
-		((TextView)findViewById(R.id.about_url)).setText(Html.fromHtml("<a href=\""+BuildInfo.repositoryURL+"\">"+BuildInfo.repositoryURL+"</a>"));
+//		((TextView)findViewById(R.id.about_revision)).setText(BuildInfo.revision);
+//		((TextView)findViewById(R.id.about_date)).setText(BuildInfo.commitDate);
+//		((TextView)findViewById(R.id.about_url)).setText(Html.fromHtml("<a href=\""+BuildInfo.repositoryURL+"\">"+BuildInfo.repositoryURL+"</a>"));
 		((TextView)findViewById(R.id.about_description)).setText(Html.fromHtml(this.getString(R.string.aboutText)));
 		
 		((TextView)findViewById(R.id.about_description)).setMovementMethod(LinkMovementMethod.getInstance());
